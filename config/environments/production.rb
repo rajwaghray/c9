@@ -79,4 +79,14 @@ Rails.application.configure do
   
   #Adding for Devise: production.rb
   config.action_mailer.default_url_options = { host: 'rkw3.herokuapp.com' }
+  
+  #Adding for paperclip
+  config.paperclip.defaults = {
+    :storage => :s3
+    :s3_credentials => {
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_KEY_ID']
+    }
+  }
 end
