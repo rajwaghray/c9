@@ -3,7 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #pins {
-    margin:0 auto;
+//    margin:0 auto;
+  background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .box {
@@ -14,3 +22,5 @@
 .box img {
     width: 100%;
 }
+
+.col3 { width: 280px; }

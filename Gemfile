@@ -39,7 +39,8 @@ gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523b
 gem 'aws-sdk', '~> 2.2', '>= 2.2.30'
 gem 'jquery-turbolinks'
 gem 'masonry-rails', '~> 0.2.4'
-
+gem 'will_paginate', '~> 3.1'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
